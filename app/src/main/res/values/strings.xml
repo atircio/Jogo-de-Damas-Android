@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Dama</string>
+
+    <string name="home_mainText">Torna-te o melhor neste jogo</string>
+    <string name="home_botao1">Conquistas</string>
+    <string name="home_batao2">Jogar</string>
+    <string name="home_container1">Jogar com o computador</string>
+    <string name="home_container2">Aprender as regras</string>
+    <string name="home_container3">Dois Jogadores</string>
+</resources>

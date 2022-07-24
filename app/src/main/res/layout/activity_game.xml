@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_color"
+    android:onClick="move"
+    tools:context=".view.GameActivity">
+
+    <TextView
+        android:id="@+id/j2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="JOGADOR"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toBottomOf="@+id/imageJ2" />
+
+    <ImageView
+        android:id="@+id/imageJ2"
+        android:layout_width="59dp"
+        android:layout_height="64dp"
+        android:onClick="Players"
+        app:layout_constraintBottom_toTopOf="@+id/j2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/guideline10"
+        app:srcCompat="@drawable/profile" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="move"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1798299" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.67" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline13"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toTopOf="@+id/guideline11"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+            <ImageView
+                android:id="@+id/btn70"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn71"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn72"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn73"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn74"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn75"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn76"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn77"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+            <ImageView
+                android:id="@+id/btn60"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn61"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn62"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn63"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn64"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn65"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn66"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn67"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <ImageView
+                android:id="@+id/btn10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn15"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn17"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+            <ImageView
+                android:id="@+id/btn30"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn31"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn32"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn33"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn34"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn35"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn36"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn37"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <ImageView
+                android:id="@+id/btn20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn23"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn24"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn25"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn26"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn27"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+            <ImageView
+                android:id="@+id/btn40"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn41"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn42"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn43"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn44"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn45"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn46"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn47"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/btn00"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn02"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn03"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn04"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn05"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn06"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn07"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+            <ImageView
+                android:id="@+id/btn50"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn51"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn52"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn53"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn54"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn55"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn56"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable2"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/btn57"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTable1"
+                android:onClick="move"
+                android:padding="4dp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageJ1"
+        android:layout_width="59dp"
+        android:layout_height="64dp"
+        android:onClick="Players"
+        app:layout_constraintBottom_toTopOf="@+id/j1"
+        app:layout_constraintStart_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toTopOf="@+id/guideline10"
+        app:srcCompat="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/j1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="JOGADOR"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toBottomOf="@+id/imageJ1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
